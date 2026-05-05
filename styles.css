@@ -489,6 +489,8 @@ section { padding: 6rem 4rem; }
   font-weight: 700;
 }
 .star-text { font-size: 0.95rem; color: var(--text-2); line-height: 1.78; }
+ul.star-list { padding-left: 1.3rem; margin: 0; }
+ul.star-list li { margin-bottom: 0.35rem; }
 
 /* Slide-in panel */
 .project-panel {
