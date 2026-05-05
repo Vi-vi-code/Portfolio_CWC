@@ -253,28 +253,35 @@
           <div class="project-card reveal" onclick="openPanel(this)" data-link="">
             <div class="project-header">
               <div>
-                <div class="project-title">AIoT智慧飲水杯墊</div>
+                <div class="project-title">AIoT智慧飲水杯墊 (進行中)</div>
                 <div class="project-role">專案推動&追蹤 · 系統架構與規格制定 · 資料庫應用 · 前後端整合</div>
                 <div class="project-tags">
                   <span class="project-tag">React Native</span>
                   <span class="project-tag">FastAPI</span>
                   <span class="project-tag">Supabase</span>
                   <span class="project-tag">IoT / BLE</span>
-                  <span class="project-tag">合作與開發</span>
-                  <span class="project-tag">產品商業性</span>
+                  <span class="project-tag">合作</span>
+                  <span class="project-tag">全生命週期開發</span>
                 </div>
               </div>
             </div>
             <div class="project-body">
               <div class="project-content">
                 <div class="star-label">Situation</div>
-                <p class="star-text">Capstone project — a team of 4 building an IoT hydration monitoring system integrating hardware, mobile app, and cloud backend.</p>
+                <p class="star-text">這是為期一學年的開發專案，技術、管理與人際溝通的多重挑戰。團隊須從初期的市場觀察與痛點分析、目標制定、系統架構設計，一路執行到後端開發與最終的商業包裝。
+                  在長達一年的合作中，我們挑戰將一個抽象的創意轉化為具備商業潛力的 AIoT 產品。從組員自身經驗出發，透過硬體感測器自動感應飲水量，並結合 App 提供視覺化數據與智慧提醒，實現自動化的健康管理。
+                  彌補現代人尤其久坐族因工作繁忙常忽略水分補充所導致的潛在健康風險，與市場上既有的飲水紀錄App多依賴手動輸入紀錄，而有遺漏或誘因不足的問題。
+                </p>
                 <div class="star-label">Task &amp; Action</div>
-                <p class="star-text">Led spec definition, progress tracking, and bug tracking processes. Designed the full SQL schema (6 tables), integrated Supabase Auth, configured RLS policies, and built the FastAPI backend with Pydantic for IoT sensor data flow.</p>
+                <ul class="star-text star-list">
+                    <li>資料庫設計與應用：技術上負責按系統需求，設計結構化資料表；並整合前後端，讓app能順利展示運作</li>
+                    <li>進度推動與結構式問題處理： 例如建立Debug Checklist 確保在各種極端使用情境下(如斷網、換杯子的計重邏輯)數據的正確性與完整性；
+                      建立每周進度回報表，於組員進度管理部分能有效透明、建立參與感與共識，並協助時間控管</li>
+                </ul>
                 <div class="star-label">Result &amp; Impact</div>
-                <p class="star-text">Delivered a functioning end-to-end system with real-time BLE data, AI chatbot integration (Groq API), and a mobile app deployed on Expo.</p>
+                <p class="star-text">曾在半年前換成現在主題，不過也順利趕上進度，目前進入到收尾階段</p>
                 <div class="star-label">Reflection</div>
-                <p class="star-text">Strengthened cross-functional communication across hardware/software teams, and deepened experience in async API design and database indexing strategy.</p>
+                <p class="star-text">進行中</p>
               </div>
             </div>
           </div>
@@ -295,13 +302,22 @@
             <div class="project-body">
               <div class="project-content">
                 <div class="star-label">Situation</div>
-                <p class="star-text">FinTech compliance/audit competition requiring a fraud detection system aligned with Taiwan's financial AI regulatory guidelines.</p>
+                <p class="star-text">在政府強力打擊詐騙的背景下，銀行端導入的AI風控模型過於嚴苛，導致許多正常帳戶遭到誤封，不只引發使用者怨聲載道，也增加銀行客服與法遵的營運壓力。
+                  我們團隊觀察到「帳號封鎖依據不明」是目前金融業面臨的業務痛點之一，因此決定以此為題，挑戰在提升偵測準確率的同時，解決決策黑盒子的問題。</p>
                 <div class="star-label">Task &amp; Action</div>
-                <p class="star-text">Built a Transformer-based transaction risk assessment system trained on the PaySim dataset, incorporating XAI feature importance analysis and regulatory positioning.</p>
+                <ul class="star-text star-list">
+                    <li>痛點精準定位：透過查找研金管會規章、銀行防詐政策與社會新聞，鎖定「機器學習誤判率」與「法遵透明度」為核心問題。提出 「低誤判率機器學習模型」 結合 「可解釋性特徵」 的技術方案，挑戰使系統不僅能抓出詐騙，更能給出合理的凍結依據</li>
+                    <li>架構規劃與論證：探討 PaySim 合成資料集與相關學術論文，釐清模型應用限制與系統前端呈現邏輯 (如資料集與相關資料限制下沒辦法符合所有金管會對於「異常狀況」的認定，因此使用原生詐騙標籤為主，聚焦在機器學習與應用原形呈現)</li>
+                    <li>團隊溝通與推進：負責將資訊與概念整理成有條理的專題目標與初步設計方案，成功說服隊友採用此方向，達成共識並啟動專案</li>
+                </ul>
                 <div class="star-label">Result &amp; Impact</div>
-                <p class="star-text">Delivered an explainable AI system with risk assessment output, positioned under Taiwan's financial AI compliance framework.</p>
+                <ul class="star-text star-list">
+                    <li>競賽肯定： 獲得「優選」成績，方案概念、技術展現與前瞻性受認可</li>
+                    <li>跨領域整合： 成功建構出一套兼具「預測準確度」與「法遵可解釋性」的評級系統模型，為交易風險控管提供具參考價值的原型</li>
+                </ul>
                 <div class="star-label">Reflection</div>
-                <p class="star-text">Gained experience in model interpretability, handling imbalanced datasets, and communicating technical findings to non-technical stakeholders.</p>
+                <p class="star-text">這場競賽的參與對我而言也算是一次跨領域實踐，從起初對銀行業務領域知識與法遵科技較為陌生，到能從法規中拆解出系統需求，我學會了如何快速摸索未知領域。
+                  此外，擔任架構規劃者讓我練習如何在團隊中清楚表達並說服組員；透過溝通方式的調整，我也更能理解如何站在不同角度達成共識，從而有效增進團隊的合作效率。</p>
               </div>
             </div>
           </div>
@@ -326,11 +342,11 @@
                 <p class="star-text">儘管「領養代替購買」的觀念普及，但我觀察到校園周邊流浪犬數量仍快速增長，且自身也曾在校園中被流浪犬追襲，進而主動向團隊提案，期望跳脫單一視角，運用大數據探究台灣社會中，究竟有哪些深層結構因素正在影響流浪動物的領養現況。</p>
                 <div class="star-label">Task &amp; Action</div>
                 <ul class="star-text star-list">
-                    <li>專案統籌與方向定調： 擔任組長職務，負責主導前期腦力激盪，從動物先天特徵(體型、毛色、年齡)一路發散思考至後天社會文化(受教程度、社會迷信)，並負責後續的工作分配</li>
+                    <li>專案統籌與方向定調：擔任組長職務，負責主導前期腦力激盪，從動物先天特徵(體型、毛色、年齡)一路發散思考至後天社會文化(受教程度、社會迷信)，並負責後續的工作分配</li>
                     <li>數據處理與主題收斂：在評估開源資料集的可得性與參考既有文獻後，我負責過濾並收斂分析走向，最終聚焦在四大探討核心：1. 經濟資源 2. 地區人口與家庭結構 3. 都市化 4. 政策規定，並對其正負向影響提出具體假設。在數據蒐集上利用 Excel 與 SAS 的資料合併、VIF檢驗、圖示化功能，整合了約7份來源不同的資料集</li>
                 </ul>
                 <div class="star-label">Result &amp; Impact</div>
-                <p class="star-text">發掘關鍵數據洞察： 統計模型的結果有成功驗證了部分假設，例如我們發現一地區「都市化程度」與流浪動物收養率存在著負向關聯。進一步查詢到大樓的管理條例有提及寵物飼養規定，
+                <p class="star-text">發掘關鍵數據洞察：統計模型的結果有成功驗證了部分假設，例如我們發現一地區「都市化程度」與流浪動物收養率存在著負向關聯。進一步查詢到大樓的管理條例有提及寵物飼養規定，
                   雖說追究因果關係不能僅靠數據且必須在更進一步做調查，但卻也能佐證我們的數據分析結果具參考價值。</p>
                 <div class="star-label">Reflection</div>
                 <p class="star-text">在這次報告中，除了統計分析軟體與分析方法的學習，感觸最多的或許是理想與現實資料的落差，且需在研究問題界定與限制之間取平衡。一開始我們發想了非常多有趣的變數（如毛色、迷信），
@@ -343,7 +359,7 @@
             <div class="project-header">
               <div>
                 <div class="project-title">電子商務—為合作店家優化數位通路</div>
-                <div class="project-role">副組長: 進度追蹤 · 協助社群行銷文案與素材 · LINE官方帳號設置 · 建立報告架構 </div>
+                <div class="project-role">副組長：進度追蹤 · 協助社群行銷文案與素材 · LINE官方帳號設置 · 建立報告架構 </div>
                 <div class="project-tags">
                   <span class="project-tag">Line OA</span>
                   <span class="project-tag">IG 行銷應用</span>
@@ -361,16 +377,16 @@
                 <p class="star-text">因應課程需求與校外實體商家合作，針對其缺乏線上觸及管道與品牌記憶點的問題，我們規劃了一系列數位通路拓展、社群行銷的活動，旨在轉化學生客群並維持顧客關係。</p>
                 <div class="star-label">Task &amp; Action</div>
                 <ul class="star-text star-list">
-                    <li>跨渠道行銷佈局： 負責 Line 官方帳號 的功能建置（含自動回覆、圖文選單、線上訂餐系統），並協同規劃 IG 內容策略，透過貼文、Reels 與抽獎活動多點觸及潛在顧客</li>
-                    <li>品牌視覺重塑： 洞察商家特點，設計專屬 IP「雞蛋仔寶寶」作為品牌視覺焦點，應用於所有行銷素材中，強化顧客的識別度</li>
-                    <li>溝通策略制定： 鎖定大學生客群，將品牌語氣定調為輕鬆幽默，並結合「桌遊」與「深夜營業」等差異化優點進行文案撰寫</li>
+                    <li>跨渠道行銷佈局：負責 Line 官方帳號 的功能建置（含自動回覆、圖文選單、線上訂餐系統），並協同規劃 IG 內容策略，透過貼文、Reels 與抽獎活動多點觸及潛在顧客</li>
+                    <li>品牌視覺重塑：洞察商家特點，設計專屬 IP「雞蛋仔寶寶」作為品牌視覺焦點，應用於所有行銷素材中，強化顧客的識別度</li>
+                    <li>溝通策略制定：鎖定大學生客群，將品牌語氣定調為輕鬆幽默，並結合「桌遊」與「深夜營業」等差異化優點進行文案撰寫</li>
                 </ul>
                 <div class="star-label">Result &amp; Impact</div>
                 <ul class="star-text star-list">
-                    <li>建立精準流量客群： Line 官方帳號從零開始，於一個月內累積 123 位好友，封鎖率僅 1.6% (2人)；專案結束後，好友人數仍有持續增長</li>
-                    <li>有效社群觸及： 透過 11 則貼文與 4 則 Reels 的系列推廣，在 30 天內達成 1,000+ 非粉絲用戶觸及，成功將品牌推廣至原有受眾之外</li>
-                    <li>功能整合： 成功整合集點、抽獎、訂餐等功能，大幅降低商家的溝通成本，提升營運效率</li>
-                    <li>課堂成果： 此專案於課堂期末評核競賽票選為第三名</li>
+                    <li>建立精準流量客群：Line 官方帳號從零開始，於一個月內累積 123 位好友，封鎖率僅 1.6% (2人)；專案結束後，好友人數仍有持續增長</li>
+                    <li>有效社群觸及：透過 11 則貼文與 4 則 Reels 的系列推廣，在 30 天內達成 1,000+ 非粉絲用戶觸及，成功將品牌推廣至原有受眾之外</li>
+                    <li>功能整合：成功整合集點、抽獎、訂餐等功能，大幅降低商家的溝通成本，提升營運效率</li>
+                    <li>課堂成果：此專案於課堂期末評核競賽票選為第三名</li>
                 </ul>
                 <div class="star-label">Reflection</div>
                 <p class="star-text">我在其中擔任副組長職務，負責追蹤組員進度、建立結報告架構，並召集開會確保執行成效符合預期目標。
